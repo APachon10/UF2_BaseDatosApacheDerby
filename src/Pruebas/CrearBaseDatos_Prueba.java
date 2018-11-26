@@ -110,7 +110,7 @@ public class CrearBaseDatos_Prueba {
 		  }
 		  ResultSet rs2=st.executeQuery("SELECT * FROM Personajes");
 		  /*Consultas para la tabla Personajes */
-		  while (rs2.next()){
+		  /*while (rs2.next()){
 		    Integer pj_id = rs.getInt("personaje_id");
 		    String name_pj = rs.getString("nombre_personaje");
 		    Integer atack = rs.getInt("Ataque");
@@ -118,7 +118,7 @@ public class CrearBaseDatos_Prueba {
 		    Integer faction_id2 = rs.getInt("faccion_id");
 		    
 		    System.out.println("Personaje_id:"+pj_id+"\n Nombre Personaje:"+name_pj+"\n Ataque:" +atack + "\nDefensa:"+def+"\nfaction_id "+faction_id2); 
-		  }
+		  }*/
 		  
 		  //Cerramos los 2 resulSet
 		  rs.close();
