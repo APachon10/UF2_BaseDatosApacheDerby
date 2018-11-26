@@ -15,8 +15,8 @@ public class CrearBaseDatos_Prueba {
 		String dbName = "BaseDatosApacheDerby\\ForHonor";
 		String dbParam = "create=true"; //la base de datos se creará si no existe todavía
 		
-		pv.crearBaseDatos(dbName,dbParam);
-		//pv.insertarDatos(dbName, dbParam);
+		//pv.crearBaseDatos(dbName,dbParam);
+		pv.insertarDatos(dbName, dbParam);
 		//pv.realizarConsultas(dbName, dbParam);
 	}
 	public void crearBaseDatos(String dbName,String dbParam) {
@@ -61,21 +61,13 @@ public class CrearBaseDatos_Prueba {
 		  Statement st = conn.createStatement();
 		  
 		  //Insertamos los valores dentro del campo Facciones 
-		  st.executeUpdate("INSERT INTO Faccion VALUES (1,'Caballeros','Los caballeros de Ashfeld son paradigmas del poder. La Legión de Hierro los envió para llevar la paz a esas tierras y, desde entonces, disfrutan de la libertad y han hecho de Ashfeld su hogar')");
+		  st.executeUpdate("INSERT INTO Faccion VALUES (1,'Caballeros','Los caballeros de Ashfeld son paradigmas del poder')");
 		  
 		  st.executeUpdate("INSERT INTO Faccion VALUES (2,'Vikingos',"
-		  + "'Los vikingos desaparecieron hace siglos, tras escapar de sus destrozadas tierras natales en pos de costas desconocidas. "+
-		  "Los caballeros conquistaron a aquellos que se quedaron atrás e hicieron que se incorporaran a su cultura."+ 
-		  "Los vikingos volvieron en masa hace unos pocos siglos. Vinieron de más allá del mar, del lugar en el que habían establecido su nuevo hogar. Regresaron por muchas razones, pero principalmente para reclamar su antiguo hogar en el norte: Valkeinheim')");
+		  + "'Los vikingos desaparecieron hace siglos, tras escapar de sus destrozadas tierras natales en pos de costas desconocidas.");
 		  
-		  st.executeUpdate("INSERT INTO Faccion VALUES (3,'Samuráis',"
-		  + "'Originarios de una tienda allende los mares, "
-		  + "cuentan la historia de un emperador y una patria que desaparecieron entre el mar y el fuego. "
-		  + "Casi un milenio después, la nación nómada ha dejado de errar y "
-		  + "ha construido un nuevo imperio cerca de las tierras reclamadas por los vikingos y por las que disputan los caballeros"
-		  +"Tras pasar las útlimas décadas aclimatándose a las colinas pantanosas conocidas como el Myre, "
-		  + "han prosperado, pero siguen siendo muy inferiores en número respecto a sus vecinos. "
-		  + "Para sobrevivir, dependen de sus habilidades marciales, su astucia y la devoción por su cultura')");
+		  st.executeUpdate("INSERT INTO Faccion VALUES (3,'Samurais',"
+		  + "'Originarios de una tienda allende los mares,cuentan la historia de un emperador y una patria que desaparecieron entre el mar y el fuego.')");
 		  
 		  System.out.println("Se han insertado todos  los registros dentro de la tabla Facciones ");
 		  
