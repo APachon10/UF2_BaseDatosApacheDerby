@@ -30,6 +30,14 @@ public class CrearBaseDatos_Prueba {
 				    ")";
 			// la sentencia SQL crea una tabla con 3 campos
 			st.execute(crearTablaFacciones);
+			
+			String crearTablaPersonajes ="CREATE TABLE Faccion("+
+					"faccion_id INTEGER NOT NULL CONSTRAINT faccion_id PRIMARY KEY,"+
+					"nombre_faccion VARCHAR(15),"+ 
+					"lore VARCHAR(20)"+
+				    ")";
+			// la sentencia SQL crea una tabla con 3 campos
+			st.execute(crearTablaFacciones);
 
 			System.out.println("Tabla Facciones Creada");
 			
