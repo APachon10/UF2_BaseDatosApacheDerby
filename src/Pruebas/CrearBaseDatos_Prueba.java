@@ -71,17 +71,17 @@ public class CrearBaseDatos_Prueba {
 		  + "'Originarios de una tienda allende los mares,cuentan la historia de un emperador y una patria que desaparecieron entre el mar y el fuego.')");
 		  
 		  System.out.println("Se han insertado todos  los registros dentro de la tabla Facciones ");
-		  
+
 		  //Insertamos los valores dentro del campo Personajes 
-		  st.executeUpdate("INSERT INTO Personajes( VALUES(1,'Guardianes',4000,5000,1)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(2,'Pacificadoras',1500,1000,1)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(3,'Justicieros',5000,6000,1)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(4,'Berserkers',6500,2000,2)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(5,'Invasores',7000,2500,2)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(6,'Valquirias',4000,4000,2)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(7,'Kensei',3000,2000,3)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(8,'Orochi',3500,2500,3)");
-		  st.executeUpdate("INSERT INTO Personajes VALUES(9,'Nobushi',2500,1000,3)");*/
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(1,'Guardianes',4000,5000,1)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(2,'Pacificadoras',1500,1000,1)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(3,'Justicieros',5000,6000,1)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(4,'Berserkers',6500,2000,2)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(5,'Invasores',7000,2500,2)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(6,'Valquirias',4000,4000,2)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(7,'Kensei',3000,2000,3)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(8,'Orochi',3500,2500,3)");
+		  st.executeUpdate("INSERT INTO Personajes(personaje_id,nombre_personaje,Ataque,Defensa,faccion_id) VALUES(9,'Nobushi',2500,1000,3)");
 		  
 		  System.out.println("Se han insertado todos  los registros dentro de la tabla Personajes  ");
 		  
