@@ -73,7 +73,7 @@ public class CrearBaseDatos_Prueba {
 		  System.out.println("Se han insertado todos  los registros dentro de la tabla Facciones ");
 		  
 		  //Insertamos los valores dentro del campo Personajes 
-		  st.executeUpdate("INSERT INTO Personajes VALUES(1,'Guardianes',4000,5000,1)");
+		  st.executeUpdate("INSERT INTO Personajes( VALUES(1,'Guardianes',4000,5000,1)");
 		  st.executeUpdate("INSERT INTO Personajes VALUES(2,'Pacificadoras',1500,1000,1)");
 		  st.executeUpdate("INSERT INTO Personajes VALUES(3,'Justicieros',5000,6000,1)");
 		  st.executeUpdate("INSERT INTO Personajes VALUES(4,'Berserkers',6500,2000,2)");
