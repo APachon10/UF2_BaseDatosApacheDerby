@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.apache.derby.iapi.sql.PreparedStatement;
 
 public class CrearBaseDatos_Prueba {
 	public static void main(String[] args) {
